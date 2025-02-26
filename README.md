@@ -5,7 +5,7 @@ This repository describes the process of reproducing [SHOW](https://github.com/y
 
 Reproduction date: 2025/02/26  
 
-Host environment:  
+Tested host environment:  
 - Ubuntu 20.04  
 - NVIDIA Driver 550.54.14  
 - CUDA release 12.4, V12.4.99  
