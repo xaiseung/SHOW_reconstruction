@@ -50,7 +50,7 @@ cd ..
 
 # Run container
 ```bash
-docker run -it --name show --gpus all --privileged=true -v .:/SHOW nvidia/cuda:11.6.1-cudnn8-devel-ubuntu20.04
+docker run -it --name show --gpus all --ipc=host --privileged=true -v .:/SHOW nvidia/cuda:11.6.1-cudnn8-devel-ubuntu20.04
 ```
 
 # Prepare in container
@@ -266,6 +266,7 @@ pip install -e .
 cd /SHOW
 ln -s $PWD/models ../models
 ln -s $PWD/data ../data
+ln -s $PWD/models/pymaf_data $PWD/modules/PyMAF/data
 #ln -s $PWD/speech2gesture_dataset ../speech2gesture_dataset
 mkdir /content
 ln -s $PWD/openpose /content/openpose

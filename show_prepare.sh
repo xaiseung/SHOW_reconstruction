@@ -181,6 +181,7 @@ pip install -e .
 cd /SHOW
 ln -s $PWD/models ../models
 ln -s $PWD/data ../data
+ln -s $PWD/models/pymaf_data $PWD/modules/PyMAF/data
 #ln -s $PWD/speech2gesture_dataset ../speech2gesture_dataset
 mkdir /content
 ln -s $PWD/openpose /content/openpose
